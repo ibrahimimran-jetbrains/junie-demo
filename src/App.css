@@ -28,6 +28,14 @@
   color: #61dafb;
 }
 
+.app-description {
+  margin: 0 auto 20px;
+  max-width: 600px;
+  font-size: 1rem;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
