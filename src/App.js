@@ -1,22 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import WorldClock from './components/WorldClock';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <h1>World Clock App</h1>
+        <p className="app-description">
+          Check the current time and date across different time zones around the world.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <WorldClock />
       </header>
     </div>
   );
