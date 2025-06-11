@@ -9,6 +9,7 @@ function WorldClock() {
   const [loading, setLoading] = useState(true);
 
   // Initial list of time zones to display
+  // Note: California is a state, not a city. Use specific cities in California like Los Angeles, San Francisco, etc.
   const [timeZones, setTimeZones] = useState([
     { name: 'New York', zone: 'America/New_York' },
     { name: 'London', zone: 'Europe/London' },
@@ -70,6 +71,23 @@ function WorldClock() {
       setError('A city with this name already exists. Please use a different name.');
       return;
     }
+    
+    // Check if the input is a state name rather than a city
+    const usStates = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 
+                      'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 
+                      'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 
+                      'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 
+                      'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Ohio', 
+                      'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 
+                      'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 
+                      'Wisconsin', 'Wyoming'];
+    
+    // Case-insensitive check for state names
+    const cityUpperCase = customCity.trim();
+    if (usStates.some(state => state.toUpperCase() === cityUpperCase.toUpperCase())) {
+      setError(`${cityUpperCase} is a state, not a city. Please enter a specific city name.`);
+      return;
+    }
 
     // Check if the time zone is valid
     try {
@@ -108,7 +126,7 @@ function WorldClock() {
           <div className="form-group">
             <input
               type="text"
-              placeholder="City Name (e.g., Paris)"
+              placeholder="City Name (e.g., Paris, Los Angeles) - not states"
               value={customCity}
               onChange={(e) => setCustomCity(e.target.value)}
             />
