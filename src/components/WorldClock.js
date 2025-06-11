@@ -15,6 +15,7 @@ function WorldClock() {
     { name: 'Tokyo', zone: 'Asia/Tokyo' },
     { name: 'Sydney', zone: 'Australia/Sydney' },
     { name: 'Los Angeles', zone: 'America/Los_Angeles' },
+    { name: 'California', zone: 'America/Los_Angeles' },
     { name: 'Bangalore', zone: 'Asia/Kolkata' },
     { name: 'Belgrade', zone: 'Europe/Belgrade' }
   ]);
