@@ -8,6 +8,21 @@ function WorldClock() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
 
+  // List of random cities with their time zones
+  const randomCities = [
+    { name: 'Paris', zone: 'Europe/Paris' },
+    { name: 'Berlin', zone: 'Europe/Berlin' },
+    { name: 'Dubai', zone: 'Asia/Dubai' },
+    { name: 'Singapore', zone: 'Asia/Singapore' },
+    { name: 'Moscow', zone: 'Europe/Moscow' },
+    { name: 'Cairo', zone: 'Africa/Cairo' },
+    { name: 'Rio de Janeiro', zone: 'America/Sao_Paulo' },
+    { name: 'Mexico City', zone: 'America/Mexico_City' }
+  ];
+
+  // Select a random city from the list
+  const randomCity = randomCities[Math.floor(Math.random() * randomCities.length)];
+
   // Initial list of time zones to display
   const [timeZones, setTimeZones] = useState([
     { name: 'New York', zone: 'America/New_York' },
@@ -17,7 +32,8 @@ function WorldClock() {
     { name: 'Los Angeles', zone: 'America/Los_Angeles' },
     { name: 'California', zone: 'America/Los_Angeles' },
     { name: 'Bangalore', zone: 'Asia/Kolkata' },
-    { name: 'Belgrade', zone: 'Europe/Belgrade' }
+    { name: 'Belgrade', zone: 'Europe/Belgrade' },
+    randomCity // Add the random city to the list
   ]);
 
   useEffect(() => {
