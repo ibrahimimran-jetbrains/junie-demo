@@ -14,7 +14,8 @@ function WorldClock() {
     { name: 'London', zone: 'Europe/London' },
     { name: 'Tokyo', zone: 'Asia/Tokyo' },
     { name: 'Sydney', zone: 'Australia/Sydney' },
-    { name: 'Los Angeles', zone: 'America/Los_Angeles' }
+    { name: 'Los Angeles', zone: 'America/Los_Angeles' },
+    { name: 'Paris', zone: 'Europe/Paris' }
   ]);
 
   useEffect(() => {
