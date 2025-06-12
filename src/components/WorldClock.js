@@ -11,8 +11,6 @@ function WorldClock() {
   // List of random cities with their time zones
   const randomCities = [
     { name: 'Paris', zone: 'Europe/Paris' },
-    { name: 'Berlin', zone: 'Europe/Berlin' },
-    { name: 'Dubai', zone: 'Asia/Dubai' },
     { name: 'Singapore', zone: 'Asia/Singapore' },
     { name: 'Moscow', zone: 'Europe/Moscow' },
     { name: 'Cairo', zone: 'Africa/Cairo' },
@@ -26,6 +24,7 @@ function WorldClock() {
   // Initial list of time zones to display
   const [timeZones, setTimeZones] = useState([
     { name: 'New York', zone: 'America/New_York' },
+    { name: 'New Jersey', zone: 'America/New_York' },
     { name: 'London', zone: 'Europe/London' },
     { name: 'Tokyo', zone: 'Asia/Tokyo' },
     { name: 'Sydney', zone: 'Australia/Sydney' },
