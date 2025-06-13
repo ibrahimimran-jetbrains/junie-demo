@@ -5,11 +5,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>World Clock App</h1>
+        <div className="logo-container">
+          <div className="crown-logo"></div>
+        </div>
+        <h1>Prestige Timekeeper</h1>
         <p className="app-description">
-          Check the current time and date across different time zones around the world.
+          Precision timekeeping across the globe. Excellence in every timezone.
         </p>
         <WorldClock />
+        <footer className="app-footer">
+          <p>© {new Date().getFullYear()} Prestige Timekeeper. Inspired by luxury watchmaking.</p>
+        </footer>
       </header>
     </div>
   );

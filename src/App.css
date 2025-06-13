@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .App-logo {
@@ -14,26 +17,90 @@
 }
 
 .App-header {
-  background-color: #e6f7ff;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
-  color: #333333;
+  color: #ffffff;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.crown-logo {
+  width: 60px;
+  height: 40px;
+  background-color: #a37e2c; /* Rolex gold */
+  border-radius: 30px 30px 0 0;
+  position: relative;
+}
+
+.crown-logo::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  border-radius: 50%;
+  top: 10px;
+  left: 20px;
+}
+
+.crown-logo::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  background-color: #006039; /* Rolex green */
+  bottom: -10px;
+  left: 10px;
+}
+
+.App-header h1 {
+  font-family: 'Playfair Display', serif;
+  color: #a37e2c; /* Rolex gold */
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 2.2rem;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #a37e2c; /* Rolex gold */
 }
 
 .app-description {
-  margin: 0 auto 20px;
+  margin: 0 auto 30px;
   max-width: 600px;
   font-size: 1rem;
-  color: #cccccc;
+  color: #a37e2c; /* Rolex gold */
   line-height: 1.5;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.app-footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  width: 100%;
+  max-width: 800px;
+}
+
+.app-footer p {
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: 300;
 }
 
 @keyframes App-logo-spin {

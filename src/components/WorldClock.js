@@ -116,17 +116,17 @@ function WorldClock() {
 
   return (
     <div className="world-clock">
-      <h2>World Clock</h2>
+      <h2>Precision Timepieces</h2>
 
       {/* Form for adding custom time zones */}
       <div className="add-timezone-form">
-        <h3>Add Custom Time Zone</h3>
+        <h3>Add Custom Location</h3>
         {error && <p className="error-message">{error}</p>}
         <form onSubmit={handleAddTimeZone}>
           <div className="form-group">
             <input
               type="text"
-              placeholder="City Name (e.g., Paris)"
+              placeholder="Location Name (e.g., Geneva)"
               value={customCity}
               onChange={(e) => setCustomCity(e.target.value)}
             />
@@ -134,7 +134,7 @@ function WorldClock() {
           <div className="form-group">
             <input
               type="text"
-              placeholder="Time Zone (e.g., Europe/Paris)"
+              placeholder="Time Zone (e.g., Europe/Zurich)"
               value={customZone}
               onChange={(e) => setCustomZone(e.target.value)}
             />
@@ -142,7 +142,7 @@ function WorldClock() {
               Use IANA time zone format: Continent/City (e.g., America/New_York, Europe/London)
             </p>
           </div>
-          <button type="submit">Add Time Zone</button>
+          <button type="submit">Add Timepiece</button>
         </form>
       </div>
 
@@ -167,8 +167,17 @@ function WorldClock() {
               </div>
               {time[name] && (
                 <>
-                  <p className="time">{time[name].time}</p>
-                  <p className="date">{time[name].date}</p>
+                  <div className="watch-face">
+                    <div className="watch-crown"></div>
+                    <p className="time">{time[name].time}</p>
+                    <p className="date">{time[name].date}</p>
+                    <div className="watch-markers">
+                      <span className="marker marker-12"></span>
+                      <span className="marker marker-3"></span>
+                      <span className="marker marker-6"></span>
+                      <span className="marker marker-9"></span>
+                    </div>
+                  </div>
                 </>
               )}
             </div>
