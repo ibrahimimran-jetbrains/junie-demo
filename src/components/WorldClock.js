@@ -32,6 +32,7 @@ function WorldClock() {
     { name: 'California', zone: 'America/Los_Angeles' },
     { name: 'Bangalore', zone: 'Asia/Kolkata' },
     { name: 'Belgrade', zone: 'Europe/Belgrade' },
+    { name: 'Barcelona', zone: 'Europe/Madrid' },
     randomCity // Add the random city to the list
   ]);
 
