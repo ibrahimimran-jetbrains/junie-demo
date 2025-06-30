@@ -8,14 +8,14 @@ function WorldClock() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
 
-  // Initial list of time zones to display
+  // Initial list of time zones to display (sorted alphabetically by city name)
   const [timeZones, setTimeZones] = useState([
-    { name: 'New York', zone: 'America/New_York' },
     { name: 'London', zone: 'Europe/London' },
-    { name: 'Tokyo', zone: 'Asia/Tokyo' },
-    { name: 'Sydney', zone: 'Australia/Sydney' },
     { name: 'Los Angeles', zone: 'America/Los_Angeles' },
-    { name: 'Riyadh', zone: 'Asia/Riyadh' }
+    { name: 'New York', zone: 'America/New_York' },
+    { name: 'Riyadh', zone: 'Asia/Riyadh' },
+    { name: 'Sydney', zone: 'Australia/Sydney' },
+    { name: 'Tokyo', zone: 'Asia/Tokyo' }
   ]);
 
   useEffect(() => {
@@ -80,8 +80,11 @@ function WorldClock() {
       // Set loading to true while the new time zone data is being fetched
       setLoading(true);
 
-      // Add the new time zone to the list
-      setTimeZones([...timeZones, { name: customCity, zone: customZone }]);
+      // Add the new time zone to the list and sort alphabetically by city name
+      const updatedTimeZones = [...timeZones, { name: customCity, zone: customZone }]
+        .sort((a, b) => a.name.localeCompare(b.name));
+      
+      setTimeZones(updatedTimeZones);
 
       // Clear the form and any error messages
       setCustomCity('');
