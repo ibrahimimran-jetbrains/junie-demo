@@ -34,6 +34,7 @@ function WorldClock() {
     { name: 'Belgrade', zone: 'Europe/Belgrade' },
     { name: 'Barcelona', zone: 'Europe/Madrid' },
     { name: 'Beirut', zone: 'Asia/Beirut' },
+    { name: 'Riyadh', zone: 'Asia/Riyadh' },
     randomCity // Add the random city to the list
   ]);
 

@@ -17,14 +17,14 @@
 }
 
 .App-header {
-  background-color: #000000;
+  background-color: #87CEEB;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
-  color: #ffffff;
+  color: #2E2E2E;
   padding: 40px 20px;
   position: relative;
 }
@@ -39,7 +39,7 @@
 .crown-logo {
   width: 60px;
   height: 40px;
-  background-color: #a37e2c; /* Rolex gold */
+  background-color: #FFD700; /* Bright sunny gold */
   border-radius: 30px 30px 0 0;
   position: relative;
 }
@@ -49,7 +49,7 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #000000;
+  background-color: #FF69B4; /* Bright pink */
   border-radius: 50%;
   top: 10px;
   left: 20px;
@@ -60,14 +60,14 @@
   position: absolute;
   width: 40px;
   height: 10px;
-  background-color: #006039; /* Rolex green */
+  background-color: #32CD32; /* Lime green */
   bottom: -10px;
   left: 10px;
 }
 
 .App-header h1 {
   font-family: 'Playfair Display', serif;
-  color: #a37e2c; /* Rolex gold */
+  color: #FF8C00; /* Bright orange */
   font-weight: 700;
   letter-spacing: 2px;
   margin-bottom: 10px;
@@ -76,14 +76,14 @@
 }
 
 .App-link {
-  color: #a37e2c; /* Rolex gold */
+  color: #FF8C00; /* Bright orange */
 }
 
 .app-description {
   margin: 0 auto 30px;
   max-width: 600px;
   font-size: 1rem;
-  color: #a37e2c; /* Rolex gold */
+  color: #FF8C00; /* Bright orange */
   line-height: 1.5;
   font-weight: 300;
   font-style: italic;
@@ -92,14 +92,14 @@
 .app-footer {
   margin-top: 40px;
   padding-top: 20px;
-  border-top: 1px solid #333;
+  border-top: 1px solid #FF69B4; /* Bright pink border */
   width: 100%;
   max-width: 800px;
 }
 
 .app-footer p {
   font-size: 0.8rem;
-  color: #666;
+  color: #9370DB; /* Medium slate blue */
   font-weight: 300;
 }
 
