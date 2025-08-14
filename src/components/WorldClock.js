@@ -11,6 +11,7 @@ function WorldClock() {
   // Initial list of time zones to display
   const [timeZones, setTimeZones] = useState([
     { name: 'New York', zone: 'America/New_York' },
+    { name: 'Toronto', zone: 'America/Toronto' },
     { name: 'London', zone: 'Europe/London' },
     { name: 'Tokyo', zone: 'Asia/Tokyo' },
     { name: 'Sydney', zone: 'Australia/Sydney' },
