@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# البدء مع Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+تم إنشاء هذا المشروع باستخدام [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## الأوامر المتاحة
 
-In the project directory, you can run:
+في مجلد المشروع، يمكنك تشغيل:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+يشغّل التطبيق في وضع التطوير.\
+افتح [http://localhost:3000](http://localhost:3000) لمشاهدته في المتصفح.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ستُعاد تحميل الصفحة عند إجراء تغييرات.\
+قد ترى أيضًا أي أخطاء lint في وحدة التحكم (Console).
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+يشغّل عدّاد الاختبارات في وضع المراقبة التفاعلي.\
+اطّلع على قسم [تشغيل الاختبارات](https://facebook.github.io/create-react-app/docs/running-tests) لمزيدٍ من المعلومات.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+يبني التطبيق للإنتاج داخل مجلد `build`.\
+يُجمّع React في وضع الإنتاج ويحسّن البناء لأفضل أداء.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+يتم تصغير حجم الحِزم وتضمين بصمات (hashes) في أسماء الملفات.\
+تطبيقك جاهز للنشر!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+راجع قسم [النشر](https://facebook.github.io/create-react-app/docs/deployment) لمزيدٍ من المعلومات.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**ملاحظة: هذه عملية باتجاه واحد. بعد تنفيذ `eject` لا يمكنك الرجوع!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+إذا لم تكن راضيًا عن أداة البناء وخيارات الضبط، يمكنك تنفيذ `eject` في أي وقت. هذا الأمر سيزيل الاعتماد الفردي الوحيد من مشروعك.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+بدلًا من ذلك، سيقوم بنسخ جميع ملفات الإعدادات والاعتمادات العابرة (مثل webpack وBabel وESLint، إلخ) مباشرةً إلى مشروعك لتصبح لديك سيطرة كاملة عليها. ستستمر جميع الأوامر باستثناء `eject` بالعمل، لكنها ستشير إلى السكربتات المنسوخة بحيث يمكنك تعديلها. عند هذه النقطة ستكون مسؤولًا عن كل شيء بنفسك.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+لا يلزمك مطلقًا استخدام `eject`. مجموعة الميزات المُنتقاة مناسبة للنشرّات الصغيرة والمتوسطة، ولا ينبغي أن تشعر بأنك مُلزمًا باستخدام هذه الميزة. ومع ذلك نفهم أن هذه الأداة لن تكون مفيدة إن لم تستطع تخصيصها عندما تكون مستعدًا لذلك.
 
-## Learn More
+## تعلّم المزيد
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+يمكنك التعرّف أكثر في [توثيق Create React App](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+لتعلّم React، اطلع على [توثيق React](https://reactjs.org/).
 
-### Code Splitting
+### تقسيم الشفرة
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+تم نقل هذا القسم هنا: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### تحليل حجم الحزمة
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+تم نقل هذا القسم هنا: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+### إنشاء تطبيق ويب تقدّمي (PWA)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+تم نقل هذا القسم هنا: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+### الإعدادات المتقدمة
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+تم نقل هذا القسم هنا: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+### النشر
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+تم نقل هذا القسم هنا: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+### فشل الأمر `npm run build` في التصغير
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+تم نقل هذا القسم هنا: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
