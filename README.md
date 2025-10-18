@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# دليل المشروع (Arabic README)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+مرحبًا! هذا المستودع عبارة عن تطبيق React تم إنشاؤه باستخدام Create React App.
+يوفّر هذا الدليل شرحًا موجزًا باللغة العربية لتثبيت المشروع وتشغيله وبنائه واختباره ونشره.
 
-## Available Scripts
+## المتطلبات
+- Node.js و npm مثبتان محليًا (أنصح بإصدار Node LTS).
 
-In the project directory, you can run:
+## البدء السريع
+في مجلد المشروع، نفّذ الأوامر التالية:
 
-### `npm start`
+### تشغيل بيئة التطوير
+```bash
+npm start
+```
+- يفتح التطبيق على العنوان: http://localhost:3000
+- يُعاد تحميل الصفحة تلقائيًا عند حفظ أي تغييرات في الشفرة.
+- ستظهر أخطاء lint (إن وجدت) في وحدة التحكّم (Console).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### تشغيل الاختبارات
+```bash
+npm test
+```
+- يشغّل عدّاد الاختبارات بوضع المراقبة التفاعلي.
+- لمزيد من التفاصيل راجع توثيق Create React App حول الاختبارات.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### إنشاء نسخة إنتاجية (Build)
+```bash
+npm run build
+```
+- يُنشئ المجلد `build/` مع حِزم مُحسّنة للإنتاج.
+- يتم تصغير الملفات وتتضمّن الأسماء هاشات لضمان التخزين المؤقّت بكفاءة.
 
-### `npm test`
+### إخراج إعدادات CRA (اختياري ومتقدّم)
+```bash
+npm run eject
+```
+تحذير: عملية لا رجعة فيها. تُنسخ ملفات الإعدادات (Webpack و Babel و ESLint وغيرها) إلى المشروع كي تتمكّن من تخصيصها يدويًا. غالبية المشاريع لا تحتاج لهذا.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## معلومات مفيدة
+- توثيق Create React App: https://facebook.github.io/create-react-app/
+- توثيق React: https://react.dev
 
-### `npm run build`
+## نشر التطبيق
+يمكنك نشر محتوى مجلد `build/` على أي خدمة استضافة ثابتة (Static Hosting) مثل GitHub Pages أو Netlify أو Vercel.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ملاحظات
+- هذا الملف أُعدّ باللغة العربية استجابةً للطلب: "write me a readme.md in arabic" بتاريخ 2025-10-18.
+- إذا رغبت بوجود نسختين (عربي/إنجليزي)، يمكن إنشاء ملف README.en.md والإبقاء على هذا الملف كنسخة عربية.
